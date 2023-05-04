@@ -1,0 +1,23 @@
+#mare {
+    background: red;
+    display: flex;
+    box-sizing:content-box;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+    width: 50rem;
+    min-width: 120px;
+    min-height: 120px;
+    border-bottom: 5rem solid grey;
+    border-right: 30rem solid rgb(255, 255, 255);
+
+}
+
+#mic {
+    display: flex;
+    background-color: yellow;
+    border: 5rem solid black;
+    width: 30rem;
+    height: 30rem;
+    box-sizing: content-box;
+}

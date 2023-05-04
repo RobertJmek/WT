@@ -1,0 +1,31 @@
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg");
+  color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper p:first-of-type{
+  color: aqua;
+}
+
+#subtitlu {
+  font-size: 30px;
+  color:rgb(212, 0, 0)
+  
+}
+
+#subtitlu::first-letter {
+  font-size: 150%;
+  color:#0035e2;
+  
+}
+
+.box {
+  opacity: .7;
+  display: inline-block;
+  background: #000000;
+  padding: 12px;
+  margin: 12px;
+  box-sizing: border-box;
+  border: 3px solid #0035e2;
+}

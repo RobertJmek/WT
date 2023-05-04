@@ -1,0 +1,35 @@
+header {
+    height: 80px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;    
+}
+body {
+    margin: 0;
+}
+h1 {
+    margin: 0;
+    
+}
+.meniu {
+    
+}
+
+.submeniu {
+
+}
+
+#continut {
+
+}
+
+#container-poze {
+
+}
+
+#headerimg {
+    position: fixed;
+    right: 0;
+    width: 10%;
+    top: 0;
+}
