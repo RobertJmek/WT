@@ -1,0 +1,38 @@
+HTML and CSS (10 points):
+
+    Use separate HTML and CSS files.
+    Utilize semantic HTML elements.
+    Create a responsive website using media queries and relative units.
+    Use a variety of CSS selectors, including basic selectors, pseudo-classes, pseudo-elements, and combinators.
+    Implement CSS properties covered in the second lab session.
+    Utilize both flexbox and CSS grid layouts.
+    Implement a dropdown menu using CSS.
+    Apply CSS transitions to different properties.
+    Create CSS animations that modify multiple properties.
+
+JavaScript (12 points):
+
+    Use separate JavaScript files.
+    Modify the style of an element or a group of elements.
+    Manipulate the DOM by selecting elements using ID, class, tag, and querySelector.
+    Create and delete elements dynamically.
+    Work with input fields and forms.
+    Utilize setTimeout() and setInterval().
+    Use LocalStorage to store and retrieve data.
+    Utilize at least one method from Math, Array, String, and Date classes.
+    Randomly change properties of elements.
+    Handle mouse and keyboard events.
+    Utilize target and currentTarget properties of events.
+    Use preventDefault() and stopPropagation() methods.
+    Access computed styles using getComputedStyle() and getBoundingClientRect().
+    Validate form data using regular expressions.
+
+Node.js (8 points):
+
+    Handle GET/POST requests to retrieve form data.
+    Make AJAX requests to retrieve data from a JSON file.
+    Implement session management for login and logout functionality.
+    Use templates, such as EJS or any other template rendering engine, for rendering dynamic content.
+    Create a custom 404 error page.
+
+Additionally, it is required to use a version control system (such as Git) and maintain a Git repository to track the progress of your project.
