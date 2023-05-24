@@ -5,7 +5,6 @@ element.style.backgroundColor = '#e6bb00';
 const title = document.getElementById('myTitle');
 title.textContent = 'New Title';
 
-
 const paragraph = document.createElement('p');
 paragraph.textContent = 'This is a new paragraph.';
 document.body.appendChild(paragraph);

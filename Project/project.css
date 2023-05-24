@@ -2,6 +2,12 @@ body {
     margin: 10px 10px 10px 10px;
     padding: 0;
     font-family: Arial, sans-serif;
+    overflow: auto;
+}
+
+.article-title
+{
+    margin-left: 15spx;
 }
 
 .container {
@@ -94,7 +100,7 @@ body {
 }
 
 .articol-ultim a {
-    position: absolute;
+    position: relative;
     inset: 0 0 0 0;
 }
 
@@ -167,5 +173,37 @@ h2 {
     font-size: 0.7rem;
     color: #888888;
 }
+
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.rotationImg{
+    animation: rotation 3s linear 0s infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+#myImage {
+    width: 10vw; /* Set the desired width */
+    height: 10vw; /* Let the height adjust automatically to maintain aspect ratio */
+    object-fit: cover; /* This is the magic */
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 100px;
+    transition: transform 0.5s, cursor 0.5s;
+  }
+
+#myImage:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 
 
