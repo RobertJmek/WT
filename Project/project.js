@@ -1,45 +1,48 @@
-const element = document.querySelector('.header-row');
-element.style.backgroundColor = '#e6bb00';
-
-
-const title = document.getElementById('myTitle');
-title.textContent = 'New Title';
-
-const paragraph = document.createElement('p');
-paragraph.textContent = 'This is a new paragraph.';
-document.body.appendChild(paragraph);
-
-
-const form = document.querySelector('form');
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  // Perform form validation or submit data
+window.addEventListener('load', () => {
+  randomHeaderColors();
+  manageCommentForm();
 });
 
 
-setTimeout(() => {
-    alert('Hello, world!');
-  }, 3000);
+function randomColor() {
+  let color = Math.floor(Math.random() * 16777215).toString(16);
+  return '#' + color;
+}
 
-  
-  localStorage.setItem('username', 'John');
-const username = localStorage.getItem('username');
+function randomHeaderColors() {
+  const articleHeaders = document.querySelectorAll('.articol-ultim h4');
+  setInterval(() => {
+    articleHeaders.forEach((header) => {
+      header.style.color = randomColor();
+    });
+  }, 2000);
+}
 
+function manageCommentForm() {
+  const form = document.getElementById('comment_form');
+  const comments = localStorage.getItem('comments') ? JSON.parse(localStorage.getItem('comments')) : [];
+  renderComments();
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const comment = {
+      name: formData.get('name'),
+      message: formData.get('message'),
+    };
+    comments.push(comment);
+    localStorage.setItem('comments', JSON.stringify(comments));
+    renderComments();
+  });
 
-const randomNumber = Math.random();
+  function renderComments() {
+    const comments = localStorage.getItem('comments') ? JSON.parse(localStorage.getItem('comments')) : [];
+    const commentsList = document.getElementById('comments');
+    commentsList.innerHTML = '';
+    comments.forEach((comment) => {
+      const li = document.createElement('li');
+      li.innerText = `${comment.name}: ${comment.message}`;
+      commentsList.appendChild(li);
+    });
+  }
 
-const element = document.querySelector('.my-element');
-const colors = ['red', 'green', 'blue'];
-const randomColor = colors[Math.floor(Math.random() * colors.length)];
-element.style.color = randomColor;
-
-
-const button = document.querySelector('.my-button');
-button.addEventListener('click', () => {
-  button.style.backgroundColor = 'blue';
-});
-
-
-const element = document.querySelector('.my-element');
-const computedStyle = getComputedStyle(element);
-const color = computed;
+}
